@@ -136,7 +136,7 @@ body {
   letter-spacing: 9px;
   /* margin-bottom: 20px; */
   /* position: absolute; */
-  font-size: 2.3vw;
+  font-size: 2.1vw;
   /* top:-20%; */
   /* left:3%; */
   text-align: center;
@@ -151,6 +151,8 @@ body {
 
 .Menu {
   position: relative;
+  height:100%;
+  width:100%;
   margin-top: 17%;
   margin-left: 30%;
   /* border-style: solid; */
@@ -165,14 +167,48 @@ body {
   margin-left: 2vw !important;
 
 }
+@media only screen and (max-width:600px) {
+  div.subb {
+    font-size: 3vw;
+  }
 
-@media only screen and (max-width:800px) {
+  div.Menu>ul>li {
+      padding: 2.5vw 0;
+      font-size: 1rem
+  }
   div.Menu {
     /* position: absolute; */
     /* margin-top: -60px; */
     top: 20%;
     left: -30%;
     /* padding-top:-30%; */
+  }
+  span.menu-list {
+    font-size: 3.2vw;
+  }
+
+  div.title-main {
+    margin: 0%;
+    /* margin-bottom: -20%; */
+  }
+
+}
+
+@media only screen and (max-width:800px) and (min-width:601px){
+  div.Menu {
+    /* position: absolute; */
+    /* margin-top: -60px; */
+    top: 20%;
+    left: -30%;
+    /* padding-top:-30%; */
+  }
+
+  div.subb {
+    font-size: 3vw;
+  }
+  div.Menu>ul>li {
+      padding: 1vw 0;
+      font-size: 1rem
   }
 
   span.menu-list {
@@ -192,10 +228,11 @@ body {
 .Menu>ul {
   list-style: none;
   padding: 0;
+  /* margin-top: 20%; */
 }
 
 .Menu>ul>li {
-  padding: 6px 0;
+  padding: 0.5vw 0;
   font-size: 1rem;
 }
 
