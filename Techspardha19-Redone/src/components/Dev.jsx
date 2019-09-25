@@ -6,7 +6,7 @@ import axios from 'axios';
 const Dev = props => {
   document.body.style.overflow = 'auto';
 
-  const { state, dispatch } = useContext(Context);
+  const { dispatch } = useContext(Context);
   const [istate, setState] = useState([]);
 
   useEffect(() => {

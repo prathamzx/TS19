@@ -49,13 +49,13 @@ const ContactDetails = props => {
           <p>- {ppl.name}</p>
           <p>&nbsp;&nbsp;{ppl.post}</p>
           <p>&nbsp;&nbsp;[{ppl.phoneNo}]</p>
-          <br/>
+          <br />
         </div>
       ))
     ) : (
       <p>No contacts found</p>
     );
-    console.log(contactDetails);
+
   return (
     <>
       <Loading title='contact' />

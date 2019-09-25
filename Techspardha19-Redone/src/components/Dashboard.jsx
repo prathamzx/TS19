@@ -33,40 +33,41 @@ const Dashboard = props => {
   }
   function date(timestamp) {
     var myDate = new Date(timestamp);
-    var x = dateFormat(myDate, "dddd, dd mmm");
+    var x = dateFormat(myDate, 'dddd, dd mmm');
     return x;
   }
 
   istate.sort((x, y) => {
     var a = new Date(x.startTime);
     var b = new Date(y.startTime);
-      console.log("sort");
+
     return a - b;
     if (a > b) return 1;
     if (a < b) return -1;
     return 0;
-
   });
-  console.log(istate);
+
   const eventList =
     istate.length > 0 ? (
-      istate.map((event,index) => (
+      istate.map((event, index) => (
         <div className='reg-eve' key={index}>
-          <div className="reg-eve-name">
+          <div className='reg-eve-name'>
             <p>{event.eventName}</p>
           </div>
           <div>
-            <p>{time(event.startTime)},  {date(event.startTime)}</p>
+            <p>
+              {time(event.startTime)}, {date(event.startTime)}
+            </p>
           </div>
         </div>
       ))
     ) : (
       <p>no registered events.</p>
     );
-console.log(istate);
+
   const { phone, name, college, year } = state.user;
   return (
-    <div className="dashboard">
+    <div className='dashboard'>
       <Loading title='dashboard' />
       <div className='c-container .overflow-dash'>
         <Back history={props} />
@@ -82,7 +83,7 @@ console.log(istate);
             {phone}
           </p>
           <p>
-            <span className='bold'>year>  </span>
+            <span className='bold'>year> </span>
             {year}
           </p>
         </div>

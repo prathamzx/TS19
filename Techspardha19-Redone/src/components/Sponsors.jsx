@@ -3,7 +3,6 @@ import Back from './Back';
 import Loading from './Loading';
 import axios from 'axios';
 import Context from '../contextStore/Context';
-import { Link } from 'react-router-dom';
 const Sponsors = props => {
   document.body.scroll = 'yes';
   document.body.style.overflow = 'auto';

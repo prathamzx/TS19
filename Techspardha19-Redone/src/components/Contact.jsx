@@ -41,7 +41,7 @@ const Contact = props => {
     };
   }, []);
   if (contactDetails.contacts.length <= 0) return <p>fetching contacts..</p>;
-  // console.log(contactDetails);
+
   return (
     <>
       <Loading title='contact' />
