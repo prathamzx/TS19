@@ -212,6 +212,7 @@ const Home = props => {
         <div className='no-mobile'>
           <TimelineHome />
         </div>
+        <a href="http://www.mediafire.com/file/t6zkj2dxl3n5qva/app-release.apk/file" target="_blank"><img className="playStoreLogo" src="playStore.png" /></a>
         <div className='logo'>
           <img className='blueLogo' src='techLogoGlitchBlue.png' />
           <img className='redLogo' src='techLogoGlitchRed.png' />
