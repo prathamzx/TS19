@@ -93,7 +93,9 @@ const TimelineHome = () => {
                 borderColor: 'black'
               }}
             >
+            <Link key={index} to={`/events/${event.eventCategory}/${event.eventName}`}>
               <p className='timeline-content'>{event.eventName}</p>
+              </Link>
                 <div className="timeline-dash"></div>
               </TimelineEvent>
           </Timeline>

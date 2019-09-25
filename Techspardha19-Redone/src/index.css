@@ -11,7 +11,7 @@
 }
 
 .Lightning {
-  animation: backAnimation 8s linear infinite;
+  /* animation: backAnimation 8s linear infinite; */
   height: 100%;
   opacity: 1;
   z-index: -1;
@@ -246,6 +246,9 @@ body {
 
 .loading-text {
   margin: 40px;
+  padding-left: 3%;
+  color: black;
+  width: fit-content;
 }
 
 a {
