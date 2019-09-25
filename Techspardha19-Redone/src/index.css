@@ -1253,3 +1253,22 @@ div.sponsorImage {
     margin-left: 0 !important;
   }
 }
+
+.playStoreLogo{
+  height: 40px;
+  /* bottom: 0%;
+  right: 0%; */
+  visibility: hidden;
+  position: absolute;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .playStoreLogo{
+    height: 40px;
+    /* bottom: 0%;
+    right: 0%; */
+    visibility: visible;
+    position: absolute;
+  } 
+}
