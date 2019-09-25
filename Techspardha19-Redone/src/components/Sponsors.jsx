@@ -36,7 +36,7 @@ const Sponsors = props => {
   }, []);
 
   function titleSponsor(sponsor, index) {
-    if (index == 0) {
+    if (sponsor.sponsorSection=="Title Sponsor") {
       return 'titleSponsor';
     } else {
       return 'spnsrImgAndTitleSection';
@@ -55,16 +55,16 @@ const Sponsors = props => {
             <div key={index} className={titleSponsor(sponsor, index)}>
               <span className='sectionAndImage'>
                 <span className='spsrTitle'>{sponsor.sponsorSection}</span>
-                {sponsor.sponsors.map((url, index2) => (
                   <span className='spnsrImageDiv'>
+                {sponsor.sponsors.map((url, index2) => (
                     <img
                       key={index2}
                       className='sponsorImage'
                       src={url.imageUrl}
                       target={url.targetUrl}
                     ></img>
-                  </span>
                 ))}
+                </span>
               </span>
             </div>
           ))}
