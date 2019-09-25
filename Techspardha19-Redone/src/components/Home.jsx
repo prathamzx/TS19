@@ -204,7 +204,7 @@ const Home = props => {
             <p> TECHSPARDHA/2019</p>
           </div>
           <div className='subb'>
-            <p>#include&lt;Spectrum_Of_Innovation&gt;</p>
+            <p>theme:spectrum_of_innovation</p>
           </div>
           <ul className='homeList'>{homeList}</ul>
         </div>
