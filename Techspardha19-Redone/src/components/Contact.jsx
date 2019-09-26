@@ -42,17 +42,20 @@ const Contact = props => {
   }, []);
   if (contactDetails.contacts.length <= 0) return <p>fetching contacts..</p>;
 
+  if(contactDetails)
+    contactDetails.contacts.reverse();
+
   return (
     <>
-      <Loading title='contact' />
+      <Loading title='team_techspardha' />
       <div className='c-container'>
         <Back history={props} />
-        <h1>/contact</h1>
+        <h1>/team_techspardha</h1>
         <div className='contact-section'>
           <ul>
             {contactDetails &&
               contactDetails.contacts.map((cnt, index) => (
-                <Link key={index} to={`/contact/${cnt.section}`}>
+                <Link key={index} to={`/team_techspardha/${cnt.section}`}>
                   <li className='cnt-item'>> {cnt.section}</li>
                 </Link>
               ))}

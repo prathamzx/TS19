@@ -48,10 +48,10 @@ function App() {
             <Route path='/devs' component={Devs} />{' '}
             <Route path='/auth' component={Auth} />{' '}
             <Route path='/ask_queries' component={Query} />{' '}
-            <Route path='/contact/:section' component={ContactDetails} />{' '}
+            <Route path='/team_techspardha/:section' component={ContactDetails} />{' '}
             <Route path='/sponsors' component={Sponsors} />{' '}
             <Route path='/guest_lectures' component={GuestLectures} />{' '}
-            <Route path='/contact' component={Contact} />{' '}
+            <Route path='/team_techspardha' component={Contact} />{' '}
             <Route component={Error404} />{' '}
           </Switch>{' '}
         </HashRouter>{' '}

@@ -48,7 +48,7 @@ const ContactDetails = props => {
           {/* <img className='contact-img' src={ppl.imageUrl} alt={ppl.name} /> */}
           <p>- {ppl.name}</p>
           <p>&nbsp;&nbsp;{ppl.post}</p>
-          <p>&nbsp;&nbsp;[{ppl.phoneNo}]</p>
+          {/* <p>&nbsp;&nbsp;{ppl.phoneNo}</p> */}
           <br />
         </div>
       ))
@@ -58,7 +58,7 @@ const ContactDetails = props => {
 
   return (
     <>
-      <Loading title='contact' />
+      <Loading title={props.match.params.section} />
       <div className='c-container'>
         <Back history={props} />
         <h1>/{props.match.params.section}</h1>
